@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="經度"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvLatitude"
+        app:layout_constraintStart_toStartOf="@+id/tvLatitude"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="緯度"
+        app:layout_constraintEnd_toEndOf="@+id/tvWeather"
+        app:layout_constraintStart_toStartOf="@+id/tvWeather"
+        app:layout_constraintTop_toBottomOf="@+id/tvLongitude" />
+
+    <TextView
+        android:id="@+id/tvWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="天氣"
+        app:layout_constraintEnd_toEndOf="@+id/tvWindSpeed"
+        app:layout_constraintStart_toStartOf="@+id/tvWindSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/tvLatitude" />
+
+    <TextView
+        android:id="@+id/tvWindSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="27dp"
+        android:text="風速"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeather" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
